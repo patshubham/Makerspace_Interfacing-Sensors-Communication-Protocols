@@ -1,0 +1,225 @@
+
+tog.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000154  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000100  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000154  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000184  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  000001c0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000008dc  00000000  00000000  000001e0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007f4  00000000  00000000  00000abc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002e2  00000000  00000000  000012b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  00001594  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000410  00000000  00000000  000015b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000d0  00000000  00000000  000019c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00001a98  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	30 c0       	rjmp	.+96     	; 0xfc <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+
+#include <avr/io.h>
+#include <util/delay.h>
+int main(void)
+{
+	DDRB |= 1 << PINB0; //Set Direction for output on PINB0
+  9e:	b8 9a       	sbi	0x17, 0	; 23
+	PORTB |= 1 << PINB0; //Toggling only Pin 0 on port b
+  a0:	c0 9a       	sbi	0x18, 0	; 24
+	DDRB |= 1 << PINB2; //Set Direction for Output on PINB2
+  a2:	ba 9a       	sbi	0x17, 2	; 23
+	DDRB &= ~(1 << PINB1); //Data Direction Register input PINB1
+  a4:	b9 98       	cbi	0x17, 1	; 23
+	PORTB |= 1 << PINB1; //Set PINB1 to a high reading
+  a6:	c1 9a       	sbi	0x18, 1	; 24
+	int Pressed = 0; //Initialize/Declare the Pressed variable
+  a8:	80 e0       	ldi	r24, 0x00	; 0
+  aa:	90 e0       	ldi	r25, 0x00	; 0
+			}
+		}
+		else
+		{
+			//This code executes when the button is not pressed.
+			Pressed = 0;
+  ac:	30 e0       	ldi	r19, 0x00	; 0
+  ae:	20 e0       	ldi	r18, 0x00	; 0
+		if (bit_is_clear(PINB, 1)) //Check is the button is pressed
+		{
+			//Make sure that the button was released first
+			if (Pressed == 0)
+			{
+				PORTB ^= 1 << PINB0;
+  b0:	71 e0       	ldi	r23, 0x01	; 1
+				_delay_ms(1000); //Toggle LED in pin 0
+				PORTB ^= 1 << PINB2;
+  b2:	64 e0       	ldi	r22, 0x04	; 4
+				_delay_ms(1000); //Toggle LED on pin 2
+				Pressed = 1;
+  b4:	51 e0       	ldi	r21, 0x01	; 1
+  b6:	40 e0       	ldi	r20, 0x00	; 0
+  b8:	02 c0       	rjmp	.+4      	; 0xbe <main+0x20>
+			}
+		}
+		else
+		{
+			//This code executes when the button is not pressed.
+			Pressed = 0;
+  ba:	83 2f       	mov	r24, r19
+  bc:	92 2f       	mov	r25, r18
+	PORTB |= 1 << PINB1; //Set PINB1 to a high reading
+	int Pressed = 0; //Initialize/Declare the Pressed variable
+
+	while (1)
+	{
+		if (bit_is_clear(PINB, 1)) //Check is the button is pressed
+  be:	b1 99       	sbic	0x16, 1	; 22
+  c0:	fc cf       	rjmp	.-8      	; 0xba <main+0x1c>
+		{
+			//Make sure that the button was released first
+			if (Pressed == 0)
+  c2:	00 97       	sbiw	r24, 0x00	; 0
+  c4:	e1 f7       	brne	.-8      	; 0xbe <main+0x20>
+			{
+				PORTB ^= 1 << PINB0;
+  c6:	88 b3       	in	r24, 0x18	; 24
+  c8:	87 27       	eor	r24, r23
+  ca:	88 bb       	out	0x18, r24	; 24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  cc:	8f e3       	ldi	r24, 0x3F	; 63
+  ce:	9d e0       	ldi	r25, 0x0D	; 13
+  d0:	e3 e0       	ldi	r30, 0x03	; 3
+  d2:	81 50       	subi	r24, 0x01	; 1
+  d4:	90 40       	sbci	r25, 0x00	; 0
+  d6:	e0 40       	sbci	r30, 0x00	; 0
+  d8:	e1 f7       	brne	.-8      	; 0xd2 <main+0x34>
+  da:	00 c0       	rjmp	.+0      	; 0xdc <main+0x3e>
+  dc:	00 00       	nop
+				_delay_ms(1000); //Toggle LED in pin 0
+				PORTB ^= 1 << PINB2;
+  de:	88 b3       	in	r24, 0x18	; 24
+  e0:	86 27       	eor	r24, r22
+  e2:	88 bb       	out	0x18, r24	; 24
+  e4:	8f e3       	ldi	r24, 0x3F	; 63
+  e6:	9d e0       	ldi	r25, 0x0D	; 13
+  e8:	e3 e0       	ldi	r30, 0x03	; 3
+  ea:	81 50       	subi	r24, 0x01	; 1
+  ec:	90 40       	sbci	r25, 0x00	; 0
+  ee:	e0 40       	sbci	r30, 0x00	; 0
+  f0:	e1 f7       	brne	.-8      	; 0xea <main+0x4c>
+  f2:	00 c0       	rjmp	.+0      	; 0xf4 <main+0x56>
+  f4:	00 00       	nop
+				_delay_ms(1000); //Toggle LED on pin 2
+				Pressed = 1;
+  f6:	85 2f       	mov	r24, r21
+  f8:	94 2f       	mov	r25, r20
+  fa:	e1 cf       	rjmp	.-62     	; 0xbe <main+0x20>
+
+000000fc <_exit>:
+  fc:	f8 94       	cli
+
+000000fe <__stop_program>:
+  fe:	ff cf       	rjmp	.-2      	; 0xfe <__stop_program>
